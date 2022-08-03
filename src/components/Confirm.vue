@@ -2,8 +2,6 @@
   <v-card tile>
     <v-toolbar
       v-if="title"
-      :dark="Boolean(getColor)"
-      :color="getColor"
       dense
       flat
     >

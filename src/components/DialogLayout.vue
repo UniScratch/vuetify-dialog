@@ -46,7 +46,7 @@ export default {
     },
     showClose: {
       type: Boolean,
-      default: () => true
+      default: () => false
     }
   },
   methods: {
