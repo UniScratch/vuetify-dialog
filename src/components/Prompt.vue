@@ -7,7 +7,7 @@
       :title-class="titleClass"
       ref="card"
     >
-      <v-card-text
+      <div
         class="body-1 py-2"
         :class="{ 'pt-4': !title }"
         v-html="text"
