@@ -7,11 +7,16 @@
       :title-class="titleClass"
       ref="card"
     >
+      <v-card-text
+        class="body-1 py-2"
+        :class="{ 'pt-4': !title }"
+        v-html="text"
+      />
       <v-text-field
         ref="input"
         v-model="editedValue"
         :rules="rules"
-        :label="text"
+        :label="label"
         v-bind="textField"
         @keyup.enter.stop="onEnter"
       />
