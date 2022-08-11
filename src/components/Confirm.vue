@@ -5,12 +5,6 @@
       dense
       flat
     >
-      <v-icon
-        v-if="Boolean(getIcon)"
-        left
-      >
-        {{ getIcon }}
-      </v-icon>
       <v-toolbar-title class="">
         {{ title }}
       </v-toolbar-title>
