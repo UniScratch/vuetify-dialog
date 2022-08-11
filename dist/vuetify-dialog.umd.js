@@ -1671,11 +1671,6 @@
               "v-toolbar",
               { attrs: { dense: "", flat: "" } },
               [
-                Boolean(_vm.getIcon)
-                  ? _c("v-icon", { attrs: { left: "" } }, [
-                      _vm._v("\n      " + _vm._s(_vm.getIcon) + "\n    ") ])
-                  : _vm._e(),
-                _vm._v(" "),
                 _c("v-toolbar-title", {}, [
                   _vm._v("\n      " + _vm._s(_vm.title) + "\n    ") ]) ],
               1
@@ -2211,12 +2206,18 @@
             },
           },
           [
+            _c("div", {
+              staticClass: "body-1 py-2",
+              class: { "pt-4": !_vm.title },
+              domProps: { innerHTML: _vm._s(_vm.text) },
+            }),
+            _vm._v(" "),
             _c(
               "v-text-field",
               _vm._b(
                 {
                   ref: "input",
-                  attrs: { rules: _vm.rules, label: _vm.text },
+                  attrs: { rules: _vm.rules, label: _vm.label },
                   on: {
                     keyup: function ($event) {
                       if (
